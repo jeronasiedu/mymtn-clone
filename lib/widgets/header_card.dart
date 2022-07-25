@@ -10,7 +10,7 @@ class HeaderCard extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 10),
       width: double.maxFinite,
-      height: 120,
+      height: 100,
       child: Card(
         elevation: 0,
         child: Padding(
@@ -22,12 +22,13 @@ class HeaderCard extends StatelessWidget {
                 width: 50,
                 height: 50,
                 decoration: const BoxDecoration(
-                    // image: DecorationImage(
-                    //   image: NetworkImage(
-                    //       "https://40daysover40smiles.org/wp-content/uploads/2020/06/MTN-Pulse-Logo-01.jpg"),
-                    //   // fit: BoxFit.cover,
-                    // ),
+                  image: DecorationImage(
+                    image: AssetImage(
+                      "assets/pulse.jpg",
                     ),
+                    // fit: BoxFit.cover,
+                  ),
+                ),
               ),
               Expanded(
                 child: Padding(
@@ -42,7 +43,7 @@ class HeaderCard extends StatelessWidget {
                             fontWeight: FontWeight.bold, fontSize: 16),
                       ),
                       const SizedBox(
-                        height: 15,
+                        height: 10,
                       ),
                       Expanded(
                         child: Text(

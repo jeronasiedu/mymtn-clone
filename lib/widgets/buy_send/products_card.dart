@@ -73,7 +73,7 @@ class ProductCard extends StatelessWidget {
               Icons.arrow_right,
               color: Colors.white,
             ),
-          )
+          ),
         ],
       ),
     );

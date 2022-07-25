@@ -3,6 +3,7 @@ import 'package:mymtn/pages/buy.dart';
 import 'package:mymtn/pages/getmore.dart';
 import 'package:mymtn/pages/home.dart';
 import 'package:mymtn/pages/just4u.dart';
+import 'package:mymtn/widgets/navigation_drawer.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
 
 class RootApp extends StatefulWidget {
@@ -47,7 +48,7 @@ class _RootAppState extends State<RootApp> {
           ],
         ),
       ),
-      endDrawer: const Drawer(),
+      endDrawer: NavigationDrawer(),
       bottomNavigationBar: SalomonBottomBar(
         currentIndex: currentIndex,
         onTap: (index) {

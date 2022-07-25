@@ -25,27 +25,27 @@ class _BuyPageState extends State<BuyPage> {
           ),
           ProductCard(
             heading: "Data",
-            icon: "assets/airtime.svg",
+            icon: "assets/internet.svg",
             subText: "Stay connected to the rest of the world",
           ),
           ProductCard(
             heading: "MTN Pulse",
-            icon: "assets/airtime.svg",
+            icon: "assets/database.svg",
             subText: "Mashup your bundles",
           ),
           ProductCard(
             heading: "Social Bundle",
-            icon: "assets/airtime.svg",
+            icon: "assets/whatsapp.svg",
             subText: "Get Social | Stay connected",
           ),
           ProductCard(
             heading: "Others",
-            icon: "assets/airtime.svg",
+            icon: "assets/plus.svg",
             subText: "Videos, Midnight & Kokrokoo",
           ),
           ProductCard(
             heading: "Just4U",
-            icon: "assets/airtime.svg",
+            icon: "assets/cart.svg",
             subText: "Unique offers for you",
           ),
         ],
