@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:mymtn/pages/buy.dart';
 import 'package:mymtn/pages/getmore.dart';
 import 'package:mymtn/pages/home.dart';
@@ -35,7 +36,10 @@ class _RootAppState extends State<RootApp> {
       appBar: AppBar(
         title: Row(
           children: [
-            const Text("MTN"),
+            SvgPicture.asset(
+              'assets/mtn-logo.svg',
+              width: 45,
+            ),
             const Spacer(),
             Text(
               pageTitle[currentIndex],
