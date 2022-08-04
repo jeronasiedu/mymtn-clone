@@ -25,7 +25,7 @@ class _RootAppState extends State<RootApp> {
   int currentIndex = 0;
   List<Widget> pages = [
     const HomePage(),
-    const BuyPage(),
+    BuyPage(),
     const Just4U(),
     const GetMore()
   ];
@@ -58,11 +58,7 @@ class _RootAppState extends State<RootApp> {
         onTap: (index) {
           setState(() {
             currentIndex = index;
-            _pageController.animateToPage(
-              currentIndex,
-              duration: const Duration(milliseconds: 200),
-              curve: Curves.ease,
-            );
+            _pageController.jumpToPage(index);
           });
         },
         selectedItemColor: Theme.of(context).primaryColor,

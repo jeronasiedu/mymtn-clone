@@ -9,6 +9,30 @@ class GetMore extends StatefulWidget {
 }
 
 class _GetMoreState extends State<GetMore> {
+  List getMoreItems = [
+    {
+      "heading": "Ayoba",
+      "desc": "A super app that allows free chat and more",
+      "image": "assets/ayoba.webp",
+    },
+    {
+      "heading": "Device Insurance",
+      "subHeading": "Device Insurance & Coverage",
+      "desc": "Insure smartphones against liquid and accidental damage",
+      "image": "assets/insurance.png",
+    },
+    {
+      "heading": "Game+",
+      "subHeading": "Games Center",
+      "desc": "Games store with variety of games for Android users",
+      "image": "assets/game+.jpeg",
+    },
+    {
+      "heading": "HottSeat",
+      "desc": "Trivia & Prizes",
+      "image": "assets/hottseat.png",
+    },
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,51 +52,35 @@ class _GetMoreState extends State<GetMore> {
                 textAlign: TextAlign.center,
               ),
             ),
-            const GetMoreCard(
-              Heading: "Ayoba",
-              desc: "A super app that allows free chat and more",
-              image: "assets/ayoba.webp",
-            ),
-            // const GetMoreCard(
-            //   Heading: "Broadband",
-            //   desc: "Fibre & Turbonet",
+            Column(
+              children: List.generate(getMoreItems.length, (index) {
+                return GetMoreCard(
+                  Heading: getMoreItems[index]['heading'],
+                  desc: getMoreItems[index]['desc'],
+                  image: getMoreItems[index]['image'],
+                  subHeading: getMoreItems[index]['subHeading'],
+                );
+              }),
+            )
 
+            // const GetMoreCard(
+            //   Heading: "Iroko TV",
+            //   subHeading: "Entertainment",
+            //   desc:
+            //       "Video streaming app for your Nigerian, Ghanaian and Korean series and movies",
+            //   image: "assets/irokotv.png",
             // ),
-            const GetMoreCard(
-              Heading: "Device Insurance",
-              subHeading: "Device Insurance & Coverage",
-              desc: "Insure smartphones against liquid and accidental damage",
-              image: "assets/insurance.png",
-            ),
-            const GetMoreCard(
-              Heading: "Game+",
-              subHeading: "Games Center",
-              desc: "Games store with variety of games for Android users",
-              image: "assets/game+.jpeg",
-            ),
-            const GetMoreCard(
-              Heading: "HottSeat",
-              desc: "Trivia & Prizes",
-              image: "assets/hottseat.png",
-            ),
-            const GetMoreCard(
-              Heading: "Iroko TV",
-              subHeading: "Entertainment",
-              desc:
-                  "Video streaming app for your Nigerian, Ghanaian and Korean series and movies",
-              image: "assets/irokotv.png",
-            ),
-            const GetMoreCard(
-              Heading: "MoMo",
-              desc: "Perform transactions and pay bills with MoMo",
-              image: "assets/momo.png",
-            ),
-            const GetMoreCard(
-              Heading: "MoMo Pay on Google Play",
-              subHeading: "Pay for Apps & Subscriptions",
-              desc: "Pay for Google Apps with MoMo",
-              image: "assets/mtnpay-googleplay.jpg",
-            ),
+            // const GetMoreCard(
+            //   Heading: "MoMo",
+            //   desc: "Perform transactions and pay bills with MoMo",
+            //   image: "assets/momo.png",
+            // ),
+            // const GetMoreCard(
+            //   Heading: "MoMo Pay on Google Play",
+            //   subHeading: "Pay for Apps & Subscriptions",
+            //   desc: "Pay for Google Apps with MoMo",
+            //   image: "assets/mtnpay-googleplay.jpg",
+            // ),
             // const GetMoreCard(
             //   Heading: "Nazara Games",
             //   subHeading: "Games and More",
