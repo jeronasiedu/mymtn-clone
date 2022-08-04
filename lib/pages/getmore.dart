@@ -32,6 +32,24 @@ class _GetMoreState extends State<GetMore> {
       "desc": "Trivia & Prizes",
       "image": "assets/hottseat.png",
     },
+    {
+      "heading": "Iroko TV",
+      "subHeading": "Entertainment",
+      "desc":
+          "Video streaming app for your Nigerian, Ghanaian and Korean series and movies",
+      "image": "assets/irokotv.png",
+    },
+    {
+      "heading": "MoMo",
+      "desc": "Perform transactions and pay bills with MoMo",
+      "image": "assets/momo.png",
+    },
+    {
+      "heading": "MoMo Pay on Google Play",
+      "subHeading": "Pay for Apps & Subscriptions",
+      "desc": "Pay for Google Apps with MoMo",
+      "image": "assets/mtnpay-googleplay.jpg",
+    },
   ];
   @override
   Widget build(BuildContext context) {
@@ -63,24 +81,6 @@ class _GetMoreState extends State<GetMore> {
               }),
             )
 
-            // const GetMoreCard(
-            //   Heading: "Iroko TV",
-            //   subHeading: "Entertainment",
-            //   desc:
-            //       "Video streaming app for your Nigerian, Ghanaian and Korean series and movies",
-            //   image: "assets/irokotv.png",
-            // ),
-            // const GetMoreCard(
-            //   Heading: "MoMo",
-            //   desc: "Perform transactions and pay bills with MoMo",
-            //   image: "assets/momo.png",
-            // ),
-            // const GetMoreCard(
-            //   Heading: "MoMo Pay on Google Play",
-            //   subHeading: "Pay for Apps & Subscriptions",
-            //   desc: "Pay for Google Apps with MoMo",
-            //   image: "assets/mtnpay-googleplay.jpg",
-            // ),
             // const GetMoreCard(
             //   Heading: "Nazara Games",
             //   subHeading: "Games and More",
